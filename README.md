@@ -14,3 +14,8 @@ This script takes a starting year and ending year as arguments and iterates thro
 ____
 ## CatalogeConcatenate.py
 This script will build a single .csv file ("concatenate.csv") from an inclusive range of dates, similar to CatalogRange.py
+___
+## ExportSingle.py
+Much like CatalogSingle.py, this will process a single file, but it is formatted to process the search result text file from https://service.scedc.caltech.edu/eq-catalogs/date_mag_loc.php.  The file must be named SearchResults.txt and will result in a file named SearchResults.csv.
+
+In my limited testing of the CalTech search function, the files all seem to have the same DOI address at the top, which my brute-force character counting method relies on always being the same length, so if you're getting errors, I'd confirm that the DOI address looks something like the SearchResults.txt file I've provided in this repo.
